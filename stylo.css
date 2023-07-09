@@ -1,0 +1,161 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Animação de fundo */
+@keyframes animatedBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(-30deg, #1d1d1e, #7e8385, #dbe4e0);
+    background-size: 800% 800%;
+    animation: animatedBackground 15s ease infinite;
+}
+
+header {
+    background-color: #100f11;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    color: #f3eeed;
+}
+
+nav ul {
+    background-color: #100f11;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.8s ease;
+}
+
+nav ul li a:hover {
+    color: #0b0c0b;
+}
+
+#banner {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 50px;
+}
+
+#banner h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#produtos {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.produto {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    height: 140px;
+    /* Defina uma altura fixa desejada */
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.produto h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.produto p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #f9f4f4;
+}
+
+button.comprar {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.comprar:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #produtos {
+        max-width: 100%;
+        padding: 20px 10px;
+    }
+
+    .produto {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
