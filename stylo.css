@@ -112,6 +112,7 @@ nav ul li a:hover {
 .produto h3 {
     margin-top: 10px;
     font-size: 18px;
+    font-weight: bolder;
 }
 
 .produto p {
