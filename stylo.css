@@ -76,8 +76,13 @@ nav ul li a:hover {
 }
 
 #banner h2 {
-    font-size: 32px;
+    font-size: 38px;
     margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 #produtos {
